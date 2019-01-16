@@ -169,6 +169,7 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 	StkFloat from = 1 + shift_period, to = 1 - shift_period;
 
 	time_t t;
+	int flag = 1;
 	//int size;
 	step = (from - to) / 300;
 
@@ -209,7 +210,7 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 	char *path_conf = (char *)malloc(sizeof(char) * (len_path + 10 + 11));
 	char *path_info = (char *)malloc(sizeof(char) * (len_path + 10 + 11));
 
-
+	char *path_file2= (char *)malloc(sizeof(char));
 
 	len_path = strlen(path);
 
@@ -290,7 +291,6 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 				int num_win;
 				int SignalLen = size;
 
-				char *path_file2;
 				char *index2 = (char*)malloc(sizeof(char) * 3);
 				srand((unsigned)time(&t));
 				for (int n = bound; n < numData + bound; n++) {
@@ -300,11 +300,23 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 					ahop = floor(shop / factor);
 					num_win = floor((SignalLen - winsize) / ahop);
 
+
 					int OutLen = (num_win - 1)*shop + winsize;
+					
+					if (label_cur == max_index) {
+						OutLen = size;
+					}
 					StkFloat *Out= (StkFloat*)calloc(OutLen, sizeof(StkFloat));
 
-					time_stretch(tempf, winsize, fftsize, shop, ahop, CENTERFREQ, Y, cx_out_i, cfg_i, cx_in, cx_out, cfg, framed, Mag, Pha, PhaSy, old_Pha
-						, old_PhaSy, PhaseDiff, dphi, freq, Y_out, size, Out,OutLen,num_win);
+					if (label_cur != max_index) {
+						time_stretch(tempf, winsize, fftsize, shop, ahop, CENTERFREQ, Y, cx_out_i, cfg_i, cx_in, cx_out, cfg, framed, Mag, Pha, PhaSy, old_Pha
+							, old_PhaSy, PhaseDiff, dphi, freq, Y_out, size, Out, OutLen, num_win);
+					}
+					else {
+						for (int i = 0; i < size; i++) {
+							Out[i] = tempf[i];
+						}
+					}
 					///////////////////////
 
 					random = rand() % (300 + 1);
@@ -331,6 +343,10 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 					for (int i = 0; i < OutLen; i++) {
 						lshifter.tick(Out[i], fout);
 					}
+					if (n == 0 && flag) {
+						n--;
+						flag = 0;
+					}
 					fclose(fout);
 					free(Out);
 				}
@@ -342,6 +358,14 @@ void mainProcess(StkFloat shift_period, int numData, char* tpath) {
 		++label_cur;
 		i = 0;
 	}
+
+	strcpy(path_conf, path2);
+	strcat(path_conf, "config.txt");
+	FILE *fconf2 = fopen(path_conf, "w");
+	fprintf(fconf2, "%d", max_index);
+	fclose(fconf2);
+
+
 	fprintf(finf, "%d", sum);
 	fclose(finf);
 	free(cx_in);

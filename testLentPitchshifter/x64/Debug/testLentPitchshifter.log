@@ -1,4 +1,6 @@
-﻿  main.cpp
+﻿  LentPitShift.cpp
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\delay.h(40): warning C4267: 'return': conversion from 'size_t' to 'unsigned long', possible loss of data
+  main.cpp
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\delay.h(40): warning C4267: 'return': conversion from 'size_t' to 'unsigned long', possible loss of data
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(25): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(30): warning C4244: 'return': conversion from 'double' to 'float', possible loss of data
@@ -6,18 +8,19 @@ d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpit
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(299): warning C4244: '=': conversion from 'stk::StkFloat' to 'float', possible loss of data
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(300): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(301): warning C4244: '=': conversion from 'double' to 'int', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(287): warning C4101: 'new_size': unreferenced local variable
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(362): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(375): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(375): warning C4244: '=': conversion from 'stk::StkFloat' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(383): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(384): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(391): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(391): warning C4244: '=': conversion from 'stk::StkFloat' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(398): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(399): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(402): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(413): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(288): warning C4101: 'new_size': unreferenced local variable
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(376): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(389): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(389): warning C4244: '=': conversion from 'stk::StkFloat' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(397): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(398): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(405): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(405): warning C4244: '=': conversion from 'stk::StkFloat' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(412): warning C4244: 'argument': conversion from 'double' to 'float', possible loss of data
 d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(413): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
-d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(365): warning C4101: 'temp': unreferenced local variable
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(416): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(427): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(427): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+d:\visual_studio_workspace\testlentpitchshifter\testlentpitchshifter\testlentpitchshifter\main.cpp(379): warning C4101: 'temp': unreferenced local variable
+  Generating Code...
   testLentPitchshifter.vcxproj -> D:\Visual_Studio_Workspace\testLentPitchshifter\testLentPitchshifter\x64\Debug\testLentPitchshifter.exe

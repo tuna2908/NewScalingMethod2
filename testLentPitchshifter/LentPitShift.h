@@ -244,6 +244,10 @@ namespace stk {
 
 		// Check for end condition
 		if (ptrFrames == (int)inputFrames.size()) {
+			/*for (int i = 0; i < inputFrames.size(); i++) {
+				printf("%.9lf\n", inputFrames[i]);
+
+			}*/
 			ptrFrames = 0;
 			process();
 			//printf("%d\n", outputFrames.size());
@@ -251,9 +255,8 @@ namespace stk {
 
 			for (int i = 0; i < outputFrames.size(); i++) {
 				fprintf(fout, "%.9lf\n", outputFrames[i]);
-				//printf("%.9lf\n", outputFrames[i]);
-
 			}
+			//_getch();
 		}
 
 		return sample;
